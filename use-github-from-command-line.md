@@ -1,4 +1,4 @@
-## How to use github :)
+## How to use github from command line
 
     git config --global user.name="username"
     git config --global user.email="useremail"
