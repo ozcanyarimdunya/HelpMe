@@ -4,7 +4,7 @@
     set timeout 1
     spawn sudo -i
     expect "*password*"
-    send "özcan\r";
+    send "password\r";
 
     expect "*root*"
     send "echo \"nameserver 8.8.8.8\" > /etc/resolv.conf\r"
