@@ -1,0 +1,29 @@
+#!/bin/bash
+
+QUOTA1="Always code as if the guy who ends up maintaining your code"
+QUOTA2="  will be a violent psychopath who knows where you live.   "
+QUOTA3="                        ― John Woods                       "
+
+LENGTH=`echo -n $QUOTA1 | wc -m`
+PADDING=20
+WIDTH=$[$LENGTH+$PADDING]
+UNDERLINE=""
+for i in $(seq $WIDTH $END); do 
+	UNDERLINE+='―'; 
+done
+
+REQUIRED=$[($WIDTH-$LENGTH)/2]
+
+SPACES=""
+for i in $(seq $REQUIRED $END); do 
+	SPACES+=' '; 
+done
+
+echo "  ${UNDERLINE}"
+echo "  "
+echo "  ${SPACES}${QUOTA1}${SPACES}"
+echo "  ${SPACES}${QUOTA2}${SPACES}"
+echo "  "
+echo "  ${SPACES}${QUOTA3}${SPACES}"
+echo "  ${UNDERLINE}"
+echo "  "
